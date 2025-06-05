@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequilhos Do Agreste - Tradição e Sabor</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Sequilhos Do Agreste</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#quality">Qualidade</a></li>
+                <li><a href="#coverage">Cobertura</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="hero-content fade-in">
+        <h1>Sequilhos Do Agreste</h1>
+        <p>Tradição familiar em cada mordida. Sabores únicos que despertam memórias e criam momentos especiais há mais de 30 anos.</p>
+        <a href="#products" class="cta-button">Conheça Nossos Produtos</a>
+    </div>
+    <div class="hero-decoration">
+        <div class="decoration-circle circle-1"></div>
+        <div class="decoration-circle circle-2"></div>
+        <div class="decoration-circle circle-3"></div>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text fade-in">
+                <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Nossa História</h2>
+                <h3>Três décadas de tradição e sabor</h3>
+                <p>Desde 1993, nossa família se dedica à arte de criar sequilhos únicos, combinando receitas tradicionais com técnicas modernas de produção. Cada sequilho é cuidadosamente preparado com ingredientes selecionados e muito amor.</p>
+                <p>Nossa missão é levar até sua mesa produtos de qualidade excepcional, mantendo viva a tradição dos sabores caseiros que marcaram gerações. Acreditamos que cada mordida deve ser uma experiência memorável.</p>
+                <p>Hoje, nossos sequilhos chegam a milhares de lares, levando não apenas sabor, mas também a calorosa tradição familiar que nos define.</p>
+            </div>
+            <div class="about-image fade-in">
+                <i class="fas fa-cookie-bite"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section products">
+    <h2 class="section-title fade-in">Nossos Produtos</h2>
+    <div class="products-grid">
+        <div class="product-card fade-in">
+            <div class="product-icon">
+                <i class="fas fa-cookie"></i>
+            </div>
+            <h3>Sequilhos Tradicionais</h3>
+            <p>Nossa receita clássica, passada de geração em geração. Crocantes, saborosos e com aquele gostinho de infância que nunca sai de moda.</p>
+            <button class="learn-more" onclick="toggleCard(this)">Saiba Mais</button>
+            
+            <div class="product-details">
+                <div class="product-info">
+                    <h4>Sobre o Produto</h4>
+                    <p>Nossos sequilhos tradicionais são feitos com a receita original da família, desenvolvida há mais de 30 anos. Utilizamos apenas ingredientes de primeira qualidade: farinha de trigo especial, ovos caipiras, açúcar cristal e manteiga fresca. O processo de produção artesanal garante a textura crocante perfeita e o sabor único que conquistou gerações.</p>
+                    
+                    <h4>Variedades Disponíveis</h4>
+                    <ul>
+                        <li>Sequilhos de Coco</li>
+                        <li>Sequilhos de Amendoim</li>
+                        <li>Sequilhos de Goiaba</li>
+                        <li>Sequilhos Simples</li>
+                    </ul>
+                </div>
+                
+                <div class="nutritional-info">
+                    <h4>Informações Nutricionais</h4>
+                    <p><em>Porção de 30g (aproximadamente 3 unidades)</em></p>
+                    <div class="nutrition-table">
+                        <div class="nutrition-row">
+                            <span>Valor Energético</span>
+                            <span>150 kcal</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Carboidratos</span>
+                            <span>20g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Açúcares</span>
+                            <span>8g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Gorduras Totais</span>
+                            <span>6g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Proteínas</span>
+                            <span>3g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Fibras</span>
+                            <span>1g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Sódio</span>
+                            <span>80mg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-card fade-in">
+            <div class="product-icon">
+                <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Bolinhos de Goma</h3>
+            <p>Para quem busca uma opção mais saudável sem abrir mão do sabor. Feitos com ingredientes naturais e fibras que fazem bem ao seu corpo.</p>
+            <button class="learn-more" onclick="toggleCard(this)">Saiba Mais</button>
+            
+            <div class="product-details">
+                <div class="product-info">
+                    <h4>Sobre o Produto</h4>
+                    <p>Nossos bolinhos de goma são a opção perfeita para quem busca um doce saudável e nutritivo. Feitos com polvilho doce, leite condensado caseiro e ingredientes naturais, são fonte de fibras e têm baixo teor de glúten. Ideais para lanches escolares e momentos de prazer sem culpa.</p>
+                    
+                    <h4>Variedades Disponíveis</h4>
+                    <ul>
+                        <li>Bolinhos de Goma com Coco</li>
+                        <li>Bolinhos de Goma com Queijo</li>
+                        <li>Bolinhos de Goma Doce</li>
+                        <li>Bolinhos de Goma Integral</li>
+                    </ul>
+                </div>
+                
+                <div class="nutritional-info">
+                    <h4>Informações Nutricionais</h4>
+                    <p><em>Porção de 25g (aproximadamente 2 unidades)</em></p>
+                    <div class="nutrition-table">
+                        <div class="nutrition-row">
+                            <span>Valor Energético</span>
+                            <span>120 kcal</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Carboidratos</span>
+                            <span>18g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Açúcares</span>
+                            <span>6g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Gorduras Totais</span>
+                            <span>4g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Proteínas</span>
+                            <span>2g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Fibras</span>
+                            <span>3g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Sódio</span>
+                            <span>45mg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-card fade-in">
+            <div class="product-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <h3>Suspiros</h3>
+            <p>Nossa linha premium com sabores exclusivos e ingredientes nobres. Uma experiência gastronômica única para paladares exigentes.</p>
+            <button class="learn-more" onclick="toggleCard(this)">Saiba Mais</button>
+            
+            <div class="product-details">
+                <div class="product-info">
+                    <h4>Sobre o Produto</h4>
+                    <p>Nossos suspiros representam o que há de mais refinado em nossa produção. Feitos com claras de ovos orgânicos batidas em ponto de neve perfeito, açúcar refinado especial e aromas naturais. Cada suspiro é uma pequena obra de arte, com textura aerada e sabores que se dissolvem delicadamente no paladar.</p>
+                    
+                    <h4>Variedades Disponíveis</h4>
+                    <ul>
+                        <li>Suspiros de Baunilha Madagascar</li>
+                        <li>Suspiros de Limão Siciliano</li>
+                        <li>Suspiros de Morango</li>
+                        <li>Suspiros de Chocolate Belga</li>
+                    </ul>
+                </div>
+                
+                <div class="nutritional-info">
+                    <h4>Informações Nutricionais</h4>
+                    <p><em>Porção de 20g (aproximadamente 4 unidades)</em></p>
+                    <div class="nutrition-table">
+                        <div class="nutrition-row">
+                            <span>Valor Energético</span>
+                            <span>80 kcal</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Carboidratos</span>
+                            <span>20g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Açúcares</span>
+                            <span>20g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Gorduras Totais</span>
+                            <span>0g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Proteínas</span>
+                            <span>2g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Fibras</span>
+                            <span>0g</span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Sódio</span>
+                            <span>10mg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Quality Section -->
+    <section id="quality" class="quality">
+    <div class="quality-content">
+        <h2 class="section-title fade-in">Compromisso com a Qualidade</h2>
+        <p style="text-align: center; color: var(--color-text-light); font-size: 1.1rem; max-width: 800px; margin: 0 auto 3rem;">Nosso compromisso vai além do sabor. Garantimos a mais alta qualidade em cada etapa do processo produtivo.</p>
+        
+        <div class="quality-features">
+            <div class="quality-feature fade-in">
+                <div class="quality-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h4>Ingredientes Naturais</h4>
+                <p>Selecionamos apenas os melhores ingredientes, priorizando fornecedores locais e produtos naturais.</p>
+            </div>
+            <div class="quality-feature fade-in">
+                <div class="quality-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h4>Controle de Qualidade</h4>
+                <p>Rigorosos padrões de qualidade em todas as etapas, desde a matéria-prima até o produto final.</p>
+            </div>
+            <div class="quality-feature fade-in">
+                <div class="quality-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h4>Certificações</h4>
+                <p>Produtos certificados e em conformidade com todas as normas sanitárias e de segurança alimentar.</p>
+            </div>
+            <div class="quality-feature fade-in">
+                <div class="quality-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h4>Feito com Amor</h4>
+                <p>Cada sequilho é preparado com o carinho e dedicação de uma receita familiar tradicional.</p>
+            </div>
+        </div>
+
+        <!-- Cards Missão, Visão e Valores -->
+        <div class="mvv-container">
+            <div class="mvv-card fade-in">
+                <div class="mvv-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3>Nossa Missão</h3>
+                <p>Proporcionar momentos de felicidade através de sequilhos artesanais de qualidade excepcional, preservando a tradição familiar e valorizando ingredientes naturais do Agreste.</p>
+            </div>
+            
+            <div class="mvv-card fade-in">
+                <div class="mvv-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3>Nossa Visão</h3>
+                <p>Ser reconhecida como a principal referência em sequilhos artesanais do Nordeste, expandindo nossa tradição familiar para todo o Brasil mantendo a autenticidade e qualidade.</p>
+            </div>
+            
+            <div class="mvv-card fade-in">
+                <div class="mvv-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <h3>Nossos Valores</h3>
+                <ul>
+                    <li><strong>Tradição:</strong> Preservamos receitas familiares há mais de 30 anos</li>
+                    <li><strong>Qualidade:</strong> Excelência em cada produto que oferecemos</li>
+                    <li><strong>Autenticidade:</strong> Sabores genuínos do Agreste nordestino</li>
+                    <li><strong>Carinho:</strong> Cada sequilho é feito com amor e dedicação</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Coverage Section -->
+    <section id="coverage" class="section coverage">
+    <h2 class="section-title fade-in">Onde Atuamos</h2>
+    <p style="text-align: center; color: var(--color-text-light); font-size: 1.1rem; margin-bottom: 3rem;">Levamos nossos sequilhos para todo o Brasil, garantindo qualidade e frescor em cada entrega.</p>
+    <div class="coverage-grid">
+        <div class="coverage-item fade-in">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Região Sudeste</h4>
+            <p>Cobertura completa em SP, RJ, MG e ES</p>
+        </div>
+        <div class="coverage-item fade-in">
+            <i class="fas fa-truck"></i>
+            <h4>Região Sul</h4>
+            <p>Entrega rápida para PR, SC e RS</p>
+        </div>
+        <div class="coverage-item fade-in">
+            <i class="fas fa-shipping-fast"></i>
+            <h4>Região Nordeste</h4>
+            <p>Distribuição em todas as capitais</p>
+        </div>
+        <div class="coverage-item fade-in">
+            <i class="fas fa-globe-americas"></i>
+            <h4>Região Centro-Oeste</h4>
+            <p>Atendimento em MT, MS, GO e DF</p>
+        </div>
+        <div class="coverage-item fade-in">
+            <i class="fas fa-plane"></i>
+            <h4>Região Norte</h4>
+            <p>Logística especial para a Amazônia</p>
+        </div>
+    </div>
+
+    <!-- Como Atuamos -->
+    <div class="how-we-work">
+        <h2 class="section-title fade-in">Como Atuamos</h2>
+        <p style="text-align: center; color: var(--color-text-light); font-size: 1.1rem; margin-bottom: 3rem;">Trabalhamos com uma rede de distribuidores parceiros para garantir que nossos produtos cheguem frescos e com qualidade até você.</p>
+        
+        <div class="distribution-flow">
+            <div class="flow-step fade-in">
+                <div class="step-number">1</div>
+                <div class="step-icon">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <h4>Produção Artesanal</h4>
+                <p>Fabricamos nossos sequilhos com receitas tradicionais em nossa unidade no Agreste, mantendo todos os padrões de qualidade.</p>
+            </div>
+            
+            <div class="flow-arrow fade-in">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            
+            <div class="flow-step fade-in">
+                <div class="step-number">2</div>
+                <div class="step-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h4>Distribuidores Parceiros</h4>
+                <p>Fornecemos nossos produtos para uma rede selecionada de distribuidores regionais que compartilham nossos valores de qualidade.</p>
+            </div>
+            
+            <div class="flow-arrow fade-in">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            
+            <div class="flow-step fade-in">
+                <div class="step-number">3</div>
+                <div class="step-icon">
+                    <i class="fas fa-store"></i>
+                </div>
+                <h4>Pontos de Venda</h4>
+                <p>Nossos distribuidores levam os produtos para supermercados, padarias, mercearias e lojas especializadas em sua região.</p>
+            </div>
+            
+            <div class="flow-arrow fade-in">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            
+            <div class="flow-step fade-in">
+                <div class="step-number">4</div>
+                <div class="step-icon">
+                    <i class="fas fa-smile"></i>
+                </div>
+                <h4>Consumidor Final</h4>
+                <p>Você encontra nossos sequilhos frescos e saborosos no ponto de venda mais próximo, mantendo toda a qualidade original.</p>
+            </div>
+        </div>
+
+        <!-- Vantagens do Modelo -->
+        <div class="distribution-benefits">
+            <h3 class="benefits-title fade-in">Vantagens do Nosso Modelo de Distribuição</h3>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>Rapidez na Entrega</h4>
+                    <p>Distribuidores regionais garantem menor tempo de trânsito e produtos sempre frescos.</p>
+                </div>
+                
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Controle de Qualidade</h4>
+                    <p>Parceiros qualificados que seguem nossos rigorosos padrões de armazenamento e manuseio.</p>
+                </div>
+                
+                
+                
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h4>Melhor Custo-Benefício</h4>
+                    <p>Otimização logística que resulta em preços mais acessíveis para o consumidor final.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action para Distribuidores -->
+        <div class="distributor-cta fade-in">
+            <div class="cta-content">
+                <h3>Seja Nosso Distribuidor Parceiro</h3>
+                <p>Interessado em distribuir nossos produtos em sua região? Entre em contato conosco e conheça as vantagens de fazer parte da família Sequilhos do Agreste.</p>
+                <a href="#contact" class="cta-button-secondary">Quero Ser Distribuidor</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-content">
+            <h2 class="section-title fade-in">O Que Nossos Clientes Dizem</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial fade-in">
+                    <p>Os sequilhos mais gostosos que já provei! A qualidade é excepcional e o sabor me lembra da minha infância. Recomendo para toda a família.</p>
+                    <div class="testimonial-author">- Maria Silva, São Paulo</div>
+                </div>
+                <div class="testimonial fade-in">
+                    <p>Compro há anos e a qualidade nunca mudou. São perfeitos para o café da tarde e sempre recebo elogios quando ofereço para as visitas.</p>
+                    <div class="testimonial-author">- João Santos, Rio de Janeiro</div>
+                </div>
+                <div class="testimonial fade-in">
+                    <p>A linha gourmet é simplesmente incrível! Sabores únicos e uma apresentação impecável. Vale cada centavo investido.</p>
+                    <div class="testimonial-author">- Ana Costa, Belo Horizonte</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+    <h2 class="section-title fade-in">Entre em Contato</h2>
+    <div class="contact-content">
+        <div class="contact-info fade-in">
+            <h3>Fale Conosco</h3>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>Endereço</h4>
+                    <p>Rua dos Sequilhos, 123<br>Centro - São Paulo, SP<br>CEP: 01234-567</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <h4>Telefone</h4>
+                    <p>(11) 99999-9999<br>(11) 3333-3333</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>E-mail</h4>
+                    <p>contato@sequilhospremium.com.br<br>vendas@sequilhospremium.com.br</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <h4>Horário de Atendimento</h4>
+                    <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                </div>
+            </div>
+        </div>
+        <div class="whatsapp-section fade-in">
+            <h3>Atendimento Personalizado</h3>
+            <p class="subtitle">Fale diretamente conosco pelo WhatsApp e tire todas as suas dúvidas sobre nossos deliciosos sequilhos artesanais.</p>
+            
+            <ul class="features-list">
+                <li><i class="fas fa-check-circle"></i> Atendimento rápido e personalizado</li>
+                <li><i class="fas fa-truck"></i> Informações sobre entrega</li>
+                <li><i class="fas fa-gift"></i> Pedidos especiais e encomendas</li>
+                <li><i class="fas fa-star"></i> Sugestões e sabores especiais</li>
+            </ul>
+
+            <div class="business-hours">
+                <h4><i class="fas fa-whatsapp"></i> Horário WhatsApp</h4>
+                <p><strong>Segunda a Sexta:</strong> 8h às 18h</p>
+                <p><strong>Sábado:</strong> 8h às 12h</p>
+                <p><strong>Resposta rápida garantida!</strong></p>
+            </div>
+
+            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os sequilhos da Sequilhos Premium." class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                Falar no WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sequilhos Do Agreste</h3>
+                <p>Tradição familiar em cada mordida. Levando sabor e qualidade para sua mesa há mais de 30 anos.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Produtos</h3>
+                <p><a href="#products">Sequilhos Tradicionais</a></p>
+                <p><a href="#products">Bolinhos de goma</a></p>
+                <p><a href="#products"></a>Suspiros</p>
+               
+            </div>
+            <div class="footer-section">
+                <h3>Empresa</h3>
+                <p><a href="#about">Nossa História</a></p>
+                <p><a href="#quality">Qualidade</a></p>
+                <p><a href="#coverage">Onde Atuamos</a></p>
+                <p><a href="#contact">Seja nosso Parceiro</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Atendimento</h3>
+                <p><a href="#contact">Fale Conosco</a></p>
+                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sequilhos Do Agreste. Todos os direitos reservados. | CNPJ: 12.345.678/0001-90</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
