@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="main-content">
     <!-- Header -->
     <header>
         <nav>
@@ -17,7 +19,7 @@
                 <li><a href="#about">Nossa História</a></li>
                 <li><a href="#products">Produtos</a></li>
                 <li><a href="#quality">Qualidade</a></li>
-                <li><a href="#coverage">Onde atuamos</a></li>
+                <li><a href="#coverage">Onde Atuamos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
             <div class="mobile-menu">
@@ -46,20 +48,47 @@
     <section id="about" class="about">
         <div class="about-content">
             <div class="about-text fade-in">
-   <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Quem Somos</h2>
-   <p>A história da Sequilhos do Agreste começa muito antes de se tornar uma fábrica. Ela nasce no interior de Pernambuco, em São Vicente Férrer, entre fornos acesos, latas de margarina e o aroma doce que anunciava que Dona Gerlane estava preparando os biscoitos que só saíam para as festas em família.</p>
-   
-   <p>Foi com uma antiga vizinha que ela aprendeu a receita — simples, mas carregada de afeto. Os biscoitos eram feitos com todo o cuidado e guardados em latões de margarina, conservando o sabor e a memória de uma tradição que, sem saber, já estava sendo construída.</p>
-   
-   <p>Com o tempo, veio a primeira virada. Incentivada por seu irmão mais novo, Sandro, a D Gerlane começou a incluir a produção dos biscoitos na Padaria para vender na capital pernambucana, Recife.</p>
-   
-   <p>Em 2001, com a separação e a perda da padaria — ela precisou se reinventar e recomeçou. Enquanto a fábrica era construída no quintal de sua casa, foi no quarto adaptado no quintal de seus pais, Seu Severino e Dona Marina, que a fábrica tomou forma. O que antes era apenas uma receita para ocasiões familiares passou a sustentar sonhos e seus três filhos.</p>
-   
-   <p>Em 2007 a fábrica mudou de lugar e duplicou de tamanho. Com muita sabedoria e intuição, ela transformava o que sobrava dos ingredientes do Sequilhos em novos biscoitos. Das gemas, surgiram os Bolinhos de Goma do Agreste e das claras, nasceram os Suspiros do Agreste. Com isso, ela provou que tudo com cuidado e carinho se faz nascer sabor — e da adversidade, resistência.</p>
-   
-   <p>Hoje, a Sequilhos do Agreste é mais do que uma fábrica. É parte da história da cidade de São Vicente Férrer/PE. Gera empregos, movimenta a economia local e carrega, em cada fornada, a essência de tudo o que somos: uma empresa familiar, nascida da coragem, do amor e da força de uma mulher que nunca deixou de acreditar no valor das pequenas coisas feitas com grandes sentimentos.</p>
+    <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">Quem Somos</h2>
+    
+    <div class="story-grid">
+        <div class="story-card">
+            <div class="card-number">01</div>
+            <h3 class="card-title">As Origens</h3>
+            <p class="card-text">A história da Sequilhos do Agreste nasce no interior de Pernambuco, em São Vicente Férrer, com Dona Gerlane preparando biscoitos artesanais para festas familiares.</p>
+        </div>
+        
+        <div class="story-card">
+            <div class="card-number">02</div>
+            <h3 class="card-title">A Receita Especial</h3>
+            <p class="card-text">Uma antiga vizinha compartilhou a receita única, carregada de afeto e tradição, que se tornaria a base de um império familiar de sabores autênticos.</p>
+        </div>
+        
+        <div class="story-card">
+            <div class="card-number">03</div>
+            <h3 class="card-title">Primeira Expansão</h3>
+            <p class="card-text">Incentivada pelo irmão Sandro, D. Gerlane expandiu a produção para a padaria, levando seus biscoitos únicos até a capital pernambucana.</p>
+        </div>
+        
+        <div class="story-card milestone-card">
+            <div class="card-year">2001</div>
+            <h3 class="card-title">O Recomeço</h3>
+            <p class="card-text">Após desafios pessoais, ela se reinventou transformando o quintal familiar em fábrica, provando que sonhos podem renascer das adversidades.</p>
+        </div>
+        
+        <div class="story-card milestone-card">
+            <div class="card-year">2007</div>
+            <h3 class="card-title">Inovação e Crescimento</h3>
+            <p class="card-text">A fábrica duplicou de tamanho e, com criatividade, nasceram os Bolinhos de Goma e Suspiros do Agreste, aproveitando cada ingrediente.</p>
+        </div>
+        
+        <div class="story-card final-card">
+            <div class="card-crown">♔</div>
+            <h3 class="card-title">Legado Atual</h3>
+            <p class="card-text">Hoje somos mais que uma empresa: somos parte da história de São Vicente Férrer, gerando empregos e perpetuando uma tradição de excelência.</p>
+        </div>
+    </div>
 </div>
-            
+                            
             <div class="about-image fade-in">
                 <i class="fas fa-cookie-bite"></i>
             </div>
@@ -354,6 +383,13 @@
            <h4>Mercadinhos</h4>
            <p>Disponível em mercadinhos locais</p>
        </div>
+
+       <div class="coverage-item fade-in">
+           <i class="fas fa-store"></i>
+           <h4>Feiras</h4>
+           <p>Disponível em feiras regionais</p>
+       </div>
+
        <div class="coverage-item fade-in">
            <i class="fas fa-shopping-cart"></i>
            <h4>Supermercados</h4>
@@ -374,56 +410,50 @@
    <div style="margin-top: 3rem;">
   <h3 style="text-align: center; color: var(--color-orange); margin-bottom: 2rem;">Cidades Atendidas</h3>
   
-  <div class="city-grid" style="
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    max-width: 800px;
-    margin: 0 auto;
-  ">
-    <div style="text-align: center; padding: 1rem; background: var(--color-cream); border-radius: 10px; border-left: 4px solid var(--color-orange);">
-      <strong style="color: var(--color-brown);">São Vicente Férrer - PE</strong>
-    </div>
-    <div style="text-align: center; padding: 1rem; background: var(--color-cream); border-radius: 10px; border-left: 4px solid var(--color-orange);">
-      <strong style="color: var(--color-brown);">Macaparana - PE</strong>
-    </div>
-    <div style="text-align: center; padding: 1rem; background: var(--color-cream); border-radius: 10px; border-left: 4px solid var(--color-orange);">
-      <strong style="color: var(--color-brown);">Vicência - PE</strong>
-    </div>
-    <div style="text-align: center; padding: 1rem; background: var(--color-cream); border-radius: 10px; border-left: 4px solid var(--color-orange);">
-      <strong style="color: var(--color-brown);">Timbaúba - PE</strong>
-    </div>
-    <div style="text-align: center; padding: 1rem; background: var(--color-cream); border-radius: 10px; border-left: 4px solid var(--color-orange);">
-      <strong style="color: var(--color-brown);">Ferreiro - PE</strong>
-    </div>
-    <div style="text-align: center; padding: 1rem; background: var(--color-cream); border-radius: 10px; border-left: 4px solid var(--color-orange);">
-      <strong style="color: var(--color-brown);">Nazaré da Mata - PE</strong>
-    </div>
-    <div style="text-align: center; padding: 1rem; background: var(--color-cream); border-radius: 10px; border-left: 4px solid var(--color-orange);">
-      <strong style="color: var(--color-brown);">Limoeiro - PE</strong>
-    </div>
-    <div style="text-align: center; padding: 1rem; background: var(--color-cream); border-radius: 10px; border-left: 4px solid var(--color-orange);">
-      <strong style="color: var(--color-brown);">Carpina - PE</strong>
-    </div>
-    <div style="text-align: center; padding: 1rem; background: var(--color-cream); border-radius: 10px; border-left: 4px solid var(--color-orange);">
-      <strong style="color: var(--color-brown);">Recife - PE</strong>
-    </div>
-    <div style="text-align: center; padding: 1rem; background: var(--color-cream); border-radius: 10px; border-left: 4px solid var(--color-orange);">
-      <strong style="color: var(--color-brown);">Olinda - PE</strong>
-    </div>
-    <div style="text-align: center; padding: 1rem; background: var(--color-cream); border-radius: 10px; border-left: 4px solid var(--color-orange);">
-      <strong style="color: var(--color-brown);">Petrolina - PE</strong>
-    </div>
-    <div style="text-align: center; padding: 1rem; background: var(--color-cream); border-radius: 10px; border-left: 4px solid var(--color-orange);">
-      <strong style="color: var(--color-brown);">João Pessoa - PB</strong>
-    </div>
-    <div style="text-align: center; padding: 1rem; background: var(--color-cream); border-radius: 10px; border-left: 4px solid var(--color-orange);">
-      <strong style="color: var(--color-brown);">Campina Grande - PB</strong>
-    </div>
-    <div style="text-align: center; padding: 1rem; background: var(--color-cream); border-radius: 10px; border-left: 4px solid var(--color-orange);">
-      <strong style="color: var(--color-brown);">Fortaleza - CE</strong>
-    </div>
+  <div class="city-grid">
+  <div class="city-item">
+    <strong>São Vicente Férrer - PE</strong>
   </div>
+  <div class="city-item">
+    <strong>Macaparana - PE</strong>
+  </div>
+  <div class="city-item">
+    <strong>Vicência - PE</strong>
+  </div>
+  <div class="city-item">
+    <strong>Timbaúba - PE</strong>
+  </div>
+  <div class="city-item">
+    <strong>Ferreiro - PE</strong>
+  </div>
+  <div class="city-item">
+    <strong>Nazaré da Mata - PE</strong>
+  </div>
+  <div class="city-item">
+    <strong>Limoeiro - PE</strong>
+  </div>
+  <div class="city-item">
+    <strong>Carpina - PE</strong>
+  </div>
+  <div class="city-item">
+    <strong>Recife - PE</strong>
+  </div>
+  <div class="city-item">
+    <strong>Olinda - PE</strong>
+  </div>
+  <div class="city-item">
+    <strong>Petrolina - PE</strong>
+  </div>
+  <div class="city-item">
+    <strong>João Pessoa - PB</strong>
+  </div>
+  <div class="city-item">
+    <strong>Campina Grande - PB</strong>
+  </div>
+  <div class="city-item">
+    <strong>Fortaleza - CE</strong>
+  </div>
+</div>
 
   <style>
     @media (min-width: 600px) {
@@ -492,46 +522,7 @@
         </div>
 
         <!-- Vantagens do Modelo -->
-        <div class="distribution-benefits">
-            <h3 class="benefits-title fade-in">Nosso Modelo de Distribuição</h3>
-            <div class="benefits-grid">
-                <div class="benefit-card fade-in">
-                    <div class="benefit-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h4>Rapidez na Entrega</h4>
-                    <p>Distribuidores regionais garantem menor tempo de trânsito e produtos sempre frescos.</p>
-                </div>
-                
-                <div class="benefit-card fade-in">
-                    <div class="benefit-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h4>Controle de Qualidade</h4>
-                    <p>Parceiros qualificados que seguem nossos rigorosos padrões de armazenamento e manuseio.</p>
-                </div>
-                
-                
-                
-                <div class="benefit-card fade-in">
-                    <div class="benefit-icon">
-                        <i class="fas fa-dollar-sign"></i>
-                    </div>
-                    <h4>Melhor Custo-Benefício</h4>
-                    <p>Otimização logística que resulta em preços mais acessíveis para o consumidor final.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Call to Action para Distribuidores -->
-        <div class="distributor-cta fade-in">
-            <div class="cta-content">
-                <h3>Seja Nosso Distribuidor Parceiro</h3>
-                <p>Interessado em distribuir nossos produtos em sua região? Entre em contato conosco e conheça as vantagens de fazer parte da família Sequilhos do Agreste.</p>
-                <a href="#contact" class="cta-button-secondary">Quero Ser Distribuidor</a>
-            </div>
-        </div>
-    </div>
+        
 </section>
 
     <!-- Testimonials Section -->
@@ -618,7 +609,7 @@
 
 
     <!-- Footer -->
-    <footer>
+<footer>
     <div class="footer-content">
         <div class="footer-section">
             <h3>Sequilhos Do Agreste</h3>
@@ -651,7 +642,7 @@
     </div>
 </footer>
 
-
+</div>
     <script src="script.js"></script>
 </body>
 </html>
