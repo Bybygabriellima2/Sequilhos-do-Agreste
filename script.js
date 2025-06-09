@@ -190,3 +190,7 @@
         button.classList.add('active');
     }
 }
+function toggleMVVCard(header) {
+   const card = header.closest('.mvv-card');
+   card.classList.toggle('expanded');
+}
