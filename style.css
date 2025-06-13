@@ -1648,6 +1648,298 @@ footer {
     transform: scale(1.1);
 }
 
+.about {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f8f6f0 0%, #f5f3ed 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="%23D2691E" opacity="0.1"/></svg>') repeat;
+    background-size: 50px 50px;
+    pointer-events: none;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #8B4513;
+    margin-bottom: 4rem;
+    position: relative;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Georgia', serif;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #D2691E, #8B4513, #CD853F);
+    border-radius: 2px;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #D2691E 0%, #8B4513 50%, #CD853F 100%);
+    transform: translateX(-50%);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(139, 69, 19, 0.3);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 100px;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.timeline-item:nth-child(3) { animation-delay: 0.4s; }
+.timeline-item:nth-child(4) { animation-delay: 0.6s; }
+.timeline-item:nth-child(5) { animation-delay: 0.8s; }
+.timeline-item:nth-child(6) { animation-delay: 1s; }
+
+.timeline-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+}
+
+/* Controle específico da alternância */
+.timeline-item.right-text .timeline-content {
+    direction: rtl;
+}
+
+.timeline-item.right-text .timeline-text {
+    direction: ltr;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    background: radial-gradient(circle, #8B4513, #654321);
+    border: 5px solid #f8f6f0;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(139, 69, 19, 0.4);
+    z-index: 10;
+}
+
+.timeline-year {
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #8B4513, #654321);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 6px 20px rgba(139, 69, 19, 0.3);
+    z-index: 5;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+}
+
+.timeline-text {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #D2691E;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-text:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-text h3 {
+    color: #8B4513;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-family: 'Georgia', serif;
+    position: relative;
+}
+
+.timeline-text h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #D2691E;
+    border-radius: 1px;
+}
+
+.timeline-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    font-family: 'Georgia', serif;
+}
+
+.timeline-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    height: 350px;
+}
+
+.timeline-image:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f0e6d2, #e8dcc0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #8B4513;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 3px dashed #D2691E;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .timeline-line {
+        left: 30px;
+    }
+    
+    .timeline-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-left: 80px;
+    }
+    
+    .timeline-item.right-text .timeline-content {
+        direction: ltr;
+    }
+    
+    .timeline-dot {
+        left: 30px;
+    }
+    
+    .timeline-year {
+        left: 30px;
+        font-size: 0.85rem;
+        padding: 8px 15px;
+    }
+    
+    .timeline-text {
+        padding: 30px;
+    }
+    
+    .timeline-text h3 {
+        font-size: 1.4rem;
+    }
+    
+    .timeline-text p {
+        font-size: 1rem;
+    }
+    
+    .timeline-image {
+        height: 250px;
+    }
+    
+    .image-placeholder {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 60px 15px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+    
+    .timeline-content {
+        margin-left: 60px;
+    }
+    
+    .timeline-text {
+        padding: 25px;
+    }
+    
+    .timeline-text h3 {
+        font-size: 1.2rem;
+    }
+    
+    .timeline-text p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .timeline-image {
+        height: 200px;
+    }
+}
+
 /* Responsividade */
 @media (max-width: 1024px) {
     .story-grid {
