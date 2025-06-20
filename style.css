@@ -901,12 +901,15 @@
             background: var(--color-cream);
         }
 
-        .coverage-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
+        /* Código Novo - Cole em seu style.css substituindo o anterior */
+.coverage-grid {
+    display: grid;
+    /* Define explicitamente 6 colunas, forçando os itens a ficarem em uma linha */
+    grid-template-columns: repeat(6, 1fr);
+    /* Opcional: Reduzir o espaçamento para caber melhor na tela */
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
 
         .coverage-item {
             background: var(--color-white);
@@ -2478,3 +2481,23 @@ footer {
         font-size: 1.5rem;
     }
 }
+
+
+/* Adicione este código ao seu arquivo style.css */
+
+/* Aplica o efeito de blur na imagem da linha do tempo */
+/* Adicione ou ajuste este código no seu arquivo style.css */
+
+/* Aplica um efeito de blur bem sutil na imagem da linha do tempo */
+.timeline-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    /* Um valor ainda menor para um desfoque mínimo. */
+    filter: blur(1px);
+    /* Mantém a transição suave */
+    transition: filter 0.4s ease-in-out;
+}
+
