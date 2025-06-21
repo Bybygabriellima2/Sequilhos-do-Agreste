@@ -107,12 +107,17 @@
             <div class="timeline-dot"></div>
             <div class="timeline-year">Hoje</div>
             <div class="timeline-content">
-                <div class="timeline-image">
+                <div class="timeline-images-grid"> <div class="timeline-image">
+                        <img src="https://i.imgur.com/KzeVekn.png" alt="Crescimento e Inovação - Nova fábrica 1">
+                    </div>
                     <div class="timeline-image">
-                        <img src="https://i.imgur.com/KzeVekn.png" alt="Crescimento e Inovação - Nova fábrica">
-                        <img src="https://i.imgur.com/DxNlHv3.png" alt="Crescimento e Inovação - Nova fábrica">
-                        <img src="https://i.imgur.com/U6tnokN.png" alt="Crescimento e Inovação - Nova fábrica">
-                        <img src="https://i.imgur.com/gD9lOar.png" alt="Crescimento e Inovação - Nova fábrica">
+                        <img src="https://i.imgur.com/DxNlHv3.png" alt="Crescimento e Inovação - Nova fábrica 2">
+                    </div>
+                    <div class="timeline-image">
+                        <img src="https://i.imgur.com/U6tnokN.png" alt="Crescimento e Inovação - Nova fábrica 3">
+                    </div>
+                    <div class="timeline-image">
+                        <img src="https://i.imgur.com/gD9lOar.png" alt="Crescimento e Inovação - Nova fábrica 4">
                     </div>
                 </div>
                 <div class="timeline-text">
@@ -129,10 +134,51 @@
 </section>
 
         <div class="mvv-container">
+
+
+<div class="mvv-card" onclick="toggleMVVCard(this)">
+            <div class="mvv-header">
+                <div class="mvv-icon">
+                    <img src="data:image/png;base64,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" alt="Propósito" class="icon-img">
+                </div>
+                <h3>Nosso Propósito</h3>
+                <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="mvv-content">
+                <p>Levar o sabor autêntico dos biscoitos do interior do Agreste ao Brasil e ao mundo, com produtos artesanais que resgatam a tradição, a simplicidade e despertam memórias boas em cada mordida</p>
+            </div>
+        </div>
+
+
+<div class="mvv-card" onclick="toggleMVVCard(this)">
+            <div class="mvv-header">
+                <div class="mvv-icon">
+                    <img src="https://i.pinimg.com/236x/74/a9/17/74a917b12415164295f583e26c62508f.jpg" alt="Valores" class="icon-img">
+                </div>
+                <h3>Nossos Valores</h3>
+                <button class="expand-btn">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="mvv-content">
+                <ul>
+                    <li><strong>Tradição e autenticidade:</strong> Celebramos as receitas da nossa terra e das culturas que nos inspiram.</li>
+                    <li><strong>Qualidade artesanal:</strong> Cada produto é feito com cuidado, como se fosse para a nossa própria família.</li>
+                    <li><strong>Inovação com respeito às origens:</strong> Buscamos novas ideias sem perder a essência do sabor caseiro.</li>
+                    <li><strong>Afeto e conexão:</strong> Acreditamos que comida boa une pessoas, gera memórias e transmite amor.</li>
+                    <li><strong>Comida que abraça:</strong> Acreditamos que um bom biscoito tem o poder de acalmar, alegrar e aproximar as pessoas</li>
+                </ul>
+            </div>
+        </div>
+
+
+
     <div class="mvv-card" onclick="toggleMVVCard(this)">
         <div class="mvv-header">
             <div class="mvv-icon">
-                <img src="https://cdn-icons-png.flaticon.com/512/2961/2961948.png" alt="Missão" class="icon-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS38mETv1XXsEV2q59709BjgvB_PUEhRStmHC__mgwm8e8c4-Xx" alt="Missão" class="icon-img">
             </div>
             <h3>Nossa Missão</h3>
             <button class="expand-btn">
@@ -144,42 +190,10 @@
         </div>
     </div>
 
-    <div class="mvv-card" onclick="toggleMVVCard(this)">
-        <div class="mvv-header">
-            <div class="mvv-icon">
-                <img src="https://cdn-icons-png.flaticon.com/512/709/709612.png" alt="Propósito" class="icon-img">
-            </div>
-            <h3>Nosso Propósito</h3>
-            <button class="expand-btn">
-                <i class="fas fa-chevron-down"></i>
-            </button>
-        </div>
-        <div class="mvv-content">
-            <p>Levar o sabor autêntico dos biscoitos do interior do Agreste ao Brasil e ao mundo, com produtos artesanais que resgatam a tradição, a simplicidade e despertam memórias boas em cada mordida</p>
-        </div>
-    </div>
+    
 
-    <div class="mvv-card" onclick="toggleMVVCard(this)">
-        <div class="mvv-header">
-            <div class="mvv-icon">
-                <img src="https://cdn-icons-png.flaticon.com/512/2666/2666505.png" alt="Valores" class="icon-img">
-            </div>
-            <h3>Nossos Valores</h3>
-            <button class="expand-btn">
-                <i class="fas fa-chevron-down"></i>
-            </button>
-        </div>
-        <div class="mvv-content">
-            <ul>
-                <li><strong>Tradição e autenticidade:</strong> Celebramos as receitas da nossa terra e das culturas que nos inspiram.</li>
-                <li><strong>Qualidade artesanal:</strong> Cada produto é feito com cuidado, como se fosse para a nossa própria família.</li>
-                <li><strong>Inovação com respeito às origens:</strong> Buscamos novas ideias sem perder a essência do sabor caseiro.</li>
-                <li><strong>Afeto e conexão:</strong> Acreditamos que comida boa une pessoas, gera memórias e transmite amor.</li>
-                <li><strong>Comida que abraça:</strong> Acreditamos que um bom biscoito tem o poder de acalmar, alegrar e aproximar as pessoas</li>
-            </ul>
-        </div>
+        
     </div>
-</div>
 
 
     <!-- Products Section -->

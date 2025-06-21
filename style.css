@@ -1833,14 +1833,73 @@ footer {
     transform: translateY(-8px) scale(1.02);
 }
 
+/* Apply frame to all timeline images */
 .timeline-image img {
     width: 100%;
-    height: auto; /* IMPORTANTE: Deixa a altura se ajustar à largura */
-    object-fit: contain; /* IMPORTANTE: Garante que a imagem inteira caiba, com barras se necessário */
+    height: auto;
+    object-fit: contain;
     border-radius: 8px;
-    display: block; /* Garante que a imagem se comporte como um bloco */
-    filter: blur(1px);
+    display: block;
+    filter: blur(0px); /* Ensure no blur */
     transition: filter 0.4s ease-in-out;
+    border: 8px solid var(--color-white); /* White border as frame */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 5px; /* Inner spacing for the frame */
+}
+
+/* New styles for the 'Hoje' section images to create a grid */
+.timeline-images-today {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns, equal width */
+    gap: 20px; /* Space between images */
+    padding: 10px; /* Add some padding around the grid if needed */
+}
+
+/* Ensure individual image containers within the grid behave correctly */
+.timeline-images-today .timeline-image {
+    width: 100%; /* Make each image container fill its grid cell */
+    height: 180px; /* Set a fixed height for uniformity, adjust as needed */
+    display: flex; /* Use flexbox to center the image vertically and horizontally */
+    align-items: center;
+    justify-content: center;
+    /* Remove any conflicting styles that might break the frame */
+    border-radius: 20px; /* Maintain rounded corners on the container */
+    overflow: hidden; /* Hide any overflow if image doesn't fit */
+    box-shadow: none; /* Remove redundant shadow from container if it exists */
+    transition: none; /* Remove redundant transition from container if it exists */
+}
+
+/* Adjust image inside the specific 'Hoje' grid to fit */
+.timeline-images-today .timeline-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure the image fits without cropping */
+}
+
+/* Responsive adjustments for the 'Hoje' grid */
+@media (max-width: 768px) {
+    .timeline-images-today {
+        grid-template-columns: 1fr; /* Stack images in a single column on smaller screens */
+        gap: 15px; /* Slightly less gap for mobile */
+    }
+    .timeline-images-today .timeline-image {
+        height: 220px; /* Adjust height for better mobile viewing */
+    }
+}
+
+.timeline-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+    filter: blur(0px);
+    transition: filter 0.4s ease-in-out;
+    /* Updated border for brown, imperial look */
+    border: 12px solid #8B4513; /* Saddle Brown - a classic brown */
+    /* Enhanced shadow for depth */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 5px;
 }
 
 .image-placeholder {
@@ -2292,24 +2351,36 @@ footer {
     box-shadow: 0 8px 25px rgba(139, 116, 102, 0.25);
     border-color: #d4c4b0;
 }
-
 .mvv-icon {
-    width: 50px;
-    height: 50px;
+    width: 50px; /* Keep icon container size */
+    height: 50px; /* Keep icon container size */
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #8b7466, #a0846f);
+    background: linear-gradient(135deg, #8b7466, #a0846f); /* Keep background if desired */
     border-radius: 12px;
     margin-right: 1rem;
     flex-shrink: 0;
 }
 
 .icon-img {
-    width: 28px;
-    height: 28px;
-    filter: brightness(0) invert(1);
-    object-fit: contain;
+    width: 100%; /* Make image take full width of its container */
+    height: 100%; /* Make image take full height of its container */
+    object-fit: contain; /* IMPORTANT: Ensures the entire image is visible, scaling it down if necessary */
+    /* REMOVE or comment out the line below if your images are colored and you want them to display in their original colors */
+    /* filter: brightness(0) invert(1); */
+}
+
+/* For responsive adjustments, ensure these are correct */
+@media (max-width: 768px) {
+    .mvv-icon {
+        width: 45px; /* Adjust size for mobile */
+        height: 45px; /* Adjust size for mobile */
+    }
+    .icon-img {
+        width: 100%; /* Ensure full width on mobile */
+        height: 100%; /* Ensure full height on mobile */
+    }
 }
 
 .mvv-header {
