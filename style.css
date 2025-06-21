@@ -2243,6 +2243,14 @@ footer {
     }
 }
 
+/* Correção para @media (max-width: 480px) */
+@media (max-width: 480px) {
+    /* ... outras regras ... */
+    .timeline-image {
+        height: auto; /* Permite que a imagem se ajuste proporcionalmente */
+    }
+    /* ... outras regras ... */
+}
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -2371,16 +2379,14 @@ footer {
     /* filter: brightness(0) invert(1); */
 }
 
-/* For responsive adjustments, ensure these are correct */
+/* Correção para @media (max-width: 768px) */
 @media (max-width: 768px) {
-    .mvv-icon {
-        width: 45px; /* Adjust size for mobile */
-        height: 45px; /* Adjust size for mobile */
+    /* ... outras regras ... */
+    .timeline-image {
+        height: auto; /* Garante que a altura seja automática */
+        margin-bottom: 20px; /* Adiciona um espaçamento se necessário */
     }
-    .icon-img {
-        width: 100%; /* Ensure full width on mobile */
-        height: 100%; /* Ensure full height on mobile */
-    }
+    /* ... outras regras ... */
 }
 
 .mvv-header {
