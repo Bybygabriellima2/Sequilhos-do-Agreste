@@ -1817,18 +1817,30 @@ footer {
     text-align: justify;
     font-family: 'Georgia', serif;
 }
-
 .timeline-image {
-    position: relative;
+    position: relative; /* Manter se precisar de elementos posicionados dentro */
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
-    height: 350px;
+    /* height: 350px; <-- REMOVA ESTA LINHA */
+    /* display: flex; /* Adicione se quiser centralizar imagens menores */
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 .timeline-image:hover {
     transform: translateY(-8px) scale(1.02);
+}
+
+.timeline-image img {
+    width: 100%;
+    height: auto; /* IMPORTANTE: Deixa a altura se ajustar à largura */
+    object-fit: contain; /* IMPORTANTE: Garante que a imagem inteira caiba, com barras se necessário */
+    border-radius: 8px;
+    display: block; /* Garante que a imagem se comporte como um bloco */
+    filter: blur(1px);
+    transition: filter 0.4s ease-in-out;
 }
 
 .image-placeholder {
@@ -2482,22 +2494,4 @@ footer {
     }
 }
 
-
-/* Adicione este código ao seu arquivo style.css */
-
-/* Aplica o efeito de blur na imagem da linha do tempo */
-/* Adicione ou ajuste este código no seu arquivo style.css */
-
-/* Aplica um efeito de blur bem sutil na imagem da linha do tempo */
-.timeline-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-    /* Um valor ainda menor para um desfoque mínimo. */
-    filter: blur(1px);
-    /* Mantém a transição suave */
-    transition: filter 0.4s ease-in-out;
-}
 
