@@ -2360,13 +2360,12 @@ footer {
     border-color: #d4c4b0;
 }
 .mvv-icon {
-    width: 50px; /* Keep icon container size */
-    height: 50px; /* Keep icon container size */
+    width: 65px; /* Aumenta a largura da imagem */
+    height: 65px; /* Aumenta a altura da imagem */
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #8b7466, #a0846f); /* Keep background if desired */
-    border-radius: 12px;
+    background: transparent; /* Remove o fundo marrom */
     margin-right: 1rem;
     flex-shrink: 0;
 }
@@ -2515,15 +2514,16 @@ footer {
         padding: 1rem 1.5rem 1.5rem;
     }
     
-    .mvv-icon {
-        width: 45px;
-        height: 45px;
-    }
-    
-    .icon-img {
-        width: 24px;
-        height: 24px;
-    }
+    /* CÓDIGO CORRIGIDO PARA COLOCAR DENTRO DO @media (max-width: 768px) */
+
+.mvv-icon {
+    width: 60px; /* Tamanho ajustado para mobile */
+    height: 60px;
+}
+.icon-img {
+    width: 100%; /* CORREÇÃO: Faz a imagem preencher o espaço acima */
+    height: 100%;
+}
     
     .mvv-header h3 {
         font-size: 1.25rem;
